@@ -20,9 +20,5 @@ object ApolloModule {
             .serverUrl("https://rickandmortyapi.com/graphql")
             .build()
     }
-    @Provides
-    @Singleton
-    fun provideApolloClient(apolloClient: ApolloClient):RickAndMortyClient{
-        return RickAndMortyClientImpl(apolloClient)
-    }
+
 }

@@ -7,7 +7,7 @@ fun RickAndMortyCharacterQuery.Result.toMap():Character{
     return Character(
         image =image?:"",
         id = id?:"",
-        name = name?:""
+        name = name?:"",
 
     )
 }

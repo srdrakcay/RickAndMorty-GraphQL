@@ -5,8 +5,10 @@ import com.rickandmorty_graphql.RickAndMortyCharacterQuery
 import com.serdar.rickandmorty_graphql.data.dto.Character
 import com.serdar.rickandmorty_graphql.data.mapper.toMap
 import com.serdar.rickandmorty_graphql.domain.client.RickAndMortyClient
+import javax.inject.Inject
 
-class RickAndMortyClientImpl(
+class RickAndMortyClientImpl
+    @Inject constructor(
     private val apolloClient: ApolloClient
 ): RickAndMortyClient {
     override suspend fun getAllCharacterQuery(): List<Character>?{
