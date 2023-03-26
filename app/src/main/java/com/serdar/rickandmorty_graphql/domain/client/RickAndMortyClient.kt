@@ -1,4 +1,4 @@
-package com.serdar.rickandmorty_graphql.data.client
+package com.serdar.rickandmorty_graphql.domain.client
 
 import com.serdar.rickandmorty_graphql.data.dto.Character
 
