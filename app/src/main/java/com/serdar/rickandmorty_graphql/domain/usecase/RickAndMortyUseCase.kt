@@ -5,6 +5,6 @@ import com.serdar.rickandmorty_graphql.data.dto.Character
 import kotlinx.coroutines.flow.Flow
 
 
-interface RicAndMortyUseCase {
+interface RickAndMortyUseCase {
     suspend operator fun invoke(): Flow<NetworkResponse<List<Character>>>
 }

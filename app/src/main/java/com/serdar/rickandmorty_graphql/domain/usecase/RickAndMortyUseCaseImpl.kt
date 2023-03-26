@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
 class RickAndMortyUseCaseImpl @Inject constructor(private val source: RemoteSource) :
-    RicAndMortyUseCase {
+    RickAndMortyUseCase {
     override suspend fun invoke(): Flow<NetworkResponse<List<Character>>> =
         flow {
             emit(NetworkResponse.Loading)
