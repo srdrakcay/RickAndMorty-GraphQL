@@ -1,0 +1,10 @@
+query RickAndMortyCharacter {
+    characters(page:1) {
+        results {
+            name
+            id
+            image
+        }
+    }
+
+}
