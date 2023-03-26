@@ -9,5 +9,5 @@ ext{
     apollo_version="3.7.5"
     hilt_version = "2.44"
     glide_version = "4.15.0"
-
+    lottieVersion="3.4.0"
 }
