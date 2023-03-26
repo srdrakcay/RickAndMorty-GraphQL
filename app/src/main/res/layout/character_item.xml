@@ -4,18 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     app:cardCornerRadius="10dp"
-    android:layout_margin="8dp"
+    android:layout_margin="5dp"
     android:backgroundTint="@color/backgroundCard"
     android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:padding="12dp"
         android:layout_height="match_parent">
 
-        <ImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/ivCharacter"
             android:layout_width="150dp"
             android:layout_height="100dp"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Small"
+            android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -25,7 +28,7 @@
             android:id="@+id/txtCharacter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="32dp"
             android:text="TextView"
             android:textColor="@color/white"
             android:textStyle="bold"
