@@ -2,6 +2,8 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id("com.apollographql.apollo3").version("3.7.5")
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 
 }
 apollo {
@@ -50,4 +52,7 @@ dependencies {
 
     //apollo
     implementation "com.apollographql.apollo3:apollo-runtime:$apollo_version"
+
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-compiler:$hilt_version"
 }
