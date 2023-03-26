@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RickAndMorty-GraphQL</string>
+    <string name="error">Somthing Went Wrong</string>
 </resources>
