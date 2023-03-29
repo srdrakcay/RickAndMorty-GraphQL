@@ -6,5 +6,5 @@ import kotlinx.coroutines.flow.Flow
 
 
 interface RickAndMortyUseCase {
-    suspend operator fun invoke(): Flow<NetworkResponse<List<Character>>>
+     operator fun invoke(): Flow<NetworkResponse<List<Character>>>
 }

@@ -9,7 +9,7 @@ import javax.inject.Inject
 
 class RickAndMortyUseCaseImpl @Inject constructor(private val source: RemoteSource) :
     RickAndMortyUseCase {
-    override suspend fun invoke(): Flow<NetworkResponse<List<Character>>> =
+    override  fun invoke(): Flow<NetworkResponse<List<Character>>> =
         flow {
             emit(NetworkResponse.Loading)
             when (val response = source.getRickAndMortyQuery()) {

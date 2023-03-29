@@ -2,6 +2,7 @@ package com.serdar.rickandmorty_graphql.data.client
 
 import com.apollographql.apollo3.ApolloClient
 import com.rickandmorty_graphql.RickAndMortyCharacterQuery
+import com.serdar.rickandmorty_graphql.data.NetworkResponse
 import com.serdar.rickandmorty_graphql.data.dto.Character
 import com.serdar.rickandmorty_graphql.data.mapper.toMap
 import com.serdar.rickandmorty_graphql.domain.client.RickAndMortyClient
